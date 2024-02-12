@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* applies to a p whose parent is body */
+      body > p {
+        color: white;
+      }
+      /* most generic: every element in the body is blue  */
+      body {
+        color: blue;
+      }
+      /* only p elements are blue */
+      p {
+        color: darkorange;
+      }
+      /* Apply to an element with a class abc */
+      .abc {
+        color: magenta;
+      }
+      /* most specific: id = 1 element on the page */
+      #xyz {
+        color: green;
+      }
+
+      h1 {
+        background-color: yellow;
+        text-decoration:underline;
+        color:blue;
+      }
+      body > h1 {
+        color:magenta;
+        font-weight:bold;
+      }
+
+      body {
+        /* background-color: #404EED; */
+      }
+      a {
+        border:1px solid black;
+        border-radius: 35px;
+        padding:10px;
+        margin-top:20px;
+        display:block;
+        text-align: center;
+        width:300px;
+        text-decoration: none;
+        font-family: Arial;
+      }
+      .white-button {
+        background-color:white;
+        color:black;
+      }
+      .white-button:hover {
+        color:#404EED;
+      }
+      #dark-button {
+        background-color: black;
+        color:white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p class="abc" id="xyz">This is a paragraph</p>
+
+    <h1>This is an h1</h1>
+    <a href="#" class="white-button">Download for Mac</a>
+    <a href="#" id="dark-button">Open Discord in your browser</a>
+    <a href="#" class="white-button">Open Discord</a>
+  </body>
+</html>
